@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Machines</title>
+    <img src="C:\Users\User\Desktop\Zensia.jpg" alt="Top Image" class="top-image">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Industrial Machines</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product" id="product1">
+                <img src="machine1.jpg" alt="Machine 1">
+                <h3>Machine 1</h3>
+                <p>High-quality industrial machine with excellent performance.</p>
+                <img src="C:\Users\User\Desktop\m1.jpeg">
+                <p>$5,000</p>
+                <button onclick="addToCart('Machine 1', 5000)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="machine2.jpg" alt="Machine 2">
+                <h3>Machine 2</h3>
+                <p>Reliable and efficient, perfect for industrial use.</p>
+                <img src="C:\Users\User\Desktop\2.jpeg">
+                <p>$8,000</p>
+                <button onclick="addToCart('Machine 2', 8000)">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <div id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <p id="totalPrice"></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Shop for Industrial Machines</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
